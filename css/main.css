@@ -1,0 +1,385 @@
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: lightblue !important;
+}
+
+/* Start of the navigation menu styling */
+.nav {
+  background-color: lightblue;
+}
+#navbar {
+  background-color: lightblue;
+  height: 3rem;
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* THIS THE NAVIGATION BUTTON AND DROPDOWN NAVIGATION FOR MOBILE STYLING */
+
+#mobile_nav_btn {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: lightblue;
+  padding: 5px 5px 5px 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 7px;
+  color: black;
+  display: none;
+}
+#mobile_nav_btn:hover {
+  background-color: rgb(142, 215, 239);
+}
+
+#nav_list {
+  list-style-type: none;
+  margin-top: 40px;
+  padding-left: 10px;
+  border-radius: 8px;
+  background-color: lightblue;
+  max-width: 105px;
+  margin-left: 10px;
+  border-color: wheat;
+  border-style: ridge;
+  text-align: center;
+  box-shadow: 2px 2px darkgray;
+  position: fixed;
+  z-index: 10;
+  display: none;
+
+}
+
+.mobile_nav_item  {
+  padding-top: 6px;
+  max-width: 100px;
+  width: max-content;
+}
+
+.mobile_nav_link {
+  color: wheat;
+  width: max-content;
+  text-decoration: none;
+  color: black;
+}
+
+/* jumbotron */
+#jumbo_container {
+  background-color: lightblue;
+  margin-bottom: -16px;
+}
+.display-4 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Start of the about section styling */
+#about_title {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: #333;
+  text-align: center;
+  letter-spacing: 0.1em;
+  padding-bottom: 2rem;
+  background-color: lightblue;
+  margin-bottom: -20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#about_container {
+  background-color: lightblue;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+#about_image {
+  max-width: 400px;
+  border-radius: 6px;
+  border: 2px groove black;
+  box-shadow: 0px 3px 3px black;
+  flex: 0 0 100%; /* Flex item should take full width */
+  margin-bottom: 20px;
+}
+
+#about_paragraph {
+  line-height: 2;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: left;
+  flex: 1 100%; /* Flex item should take full width */
+  margin-bottom: 20px;
+}
+
+/* Start of the Services Section styling */
+#services_title {
+  font-size: 3rem;
+  font-weight: lighter;
+  color: #333;
+  letter-spacing: 0.1em;
+  background-color: lightblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+#services_grid {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+  background-color: lightblue;
+}
+
+.card {
+  margin-bottom: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: lightblue;
+}
+.card-img-top {
+  width: 400px;
+  height: 400px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.card-body {
+  background-color: rgb(146, 212, 234);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.card-title {
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+.card-text {
+  line-height: 2;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Start of the Testimonial styling */
+#review_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 20px;
+  border-width: 2px;
+  border-style: ridge;
+  border-color: black;
+  background-color: lightblue;
+  max-width: 95%;
+  margin: 0 auto;
+}
+#review_title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  grid-row-start: 1;
+  font-size: 3rem;
+  font-weight: lighter;
+  color: #333;
+  letter-spacing: 0.1em;
+  background-color: lightblue;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+#review_one {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+#review_two {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+
+/* Start of the footer styling */
+
+#footer_container {
+  background-color: lightblue;
+  padding-top: 1in;
+  padding-bottom: 30px;
+}
+
+#footer_paragraph {
+  font-size: 3rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  align-items: center;
+  text-align: center;
+}
+
+/* Styling for the open contact form button */
+.btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  -webkit-animation: movePopup 3s;
+  animation: movePopup 3s;
+}
+/* movePopup animation moves the button from off the right side of the screen to its fixed location on the window */
+@keyframes movePopup {
+  from {
+    right: -40vw;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@-webkit-keyframes movePopup {
+  from {
+    right: -40vw;
+  }
+  to {
+    right: 0;
+  }
+}
+
+/*Contact Form Styling */
+.contact-form {
+    position: fixed;
+    display: none;
+    z-index: 9;
+    right: 0px;
+    bottom: 0px;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px; 
+    margin-right: 10px; 
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px; 
+    right: 5px; 
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    background-color: #dcdcdc;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 3px; 
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  #submit_button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #submit_button:hover {
+    background-color: #45a049;
+  }
+
+/* Starting of the media queries */
+
+ /* This the styling for the title of the Website */
+@media screen and (max-width: 500px) {
+  .display-4 {
+      padding-top: 50px;
+      padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #about_container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about_image {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  #about_title {
+    font-size: 2rem;
+  }
+
+  #review_container {
+    grid-template-rows: 60px 2fr;
+  }
+
+  /* Styling for the contact form open button */
+  .btn {
+    margin-right: 5px;
+  }
+}
+
+
