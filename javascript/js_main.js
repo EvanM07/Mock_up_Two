@@ -1,5 +1,6 @@
 // This hides the navigation bar and shows the navigation button 
 // when the user sizes the window too 500px 
+
 document.addEventListener("DOMContentLoaded", function () {
   function hideNavBar() {
     if (window.innerWidth <= 500) {
@@ -11,10 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("dropdown_nav").style.display = "none";
     }
   }
-  // added event listener to the window's resize event
+  
+  // Call hideNavBar() when the page loads
+  hideNavBar();
+
+  // Added event listener to the window's resize event
   window.addEventListener("resize", hideNavBar);
 });
-
 // This toggles navigation dropdown menu
 function openNav() {
   var dropdownNav = document.getElementById("dropdown_nav");
