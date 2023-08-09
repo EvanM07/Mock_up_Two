@@ -48,7 +48,6 @@ body {
   border-style: solid;
   border-radius: 7px;
   color: black;
-  display: none;
 }
 #mobile_nav_btn:hover {
   background-color: rgb(142, 215, 239);
@@ -68,7 +67,6 @@ body {
   box-shadow: 2px 2px darkgray;
   position: fixed;
   z-index: 10;
-  display: none;
 
 }
 
