@@ -385,12 +385,6 @@ body {
 /* Starting of the media queries */
 
  /* This the styling for the title of the Website */
-@media screen and (max-width: 500px) {
-  .display-4 {
-      padding-top: 50px;
-      padding-bottom: 30px;
-  }
-}
 
 @media only screen and (max-width: 900px) {
   #about_container {
@@ -416,6 +410,17 @@ body {
   /* Styling for the contact form open button */
   .btn {
     margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .display-4 {
+      padding-top: 50px;
+      padding-bottom: 30px;
+  }
+
+  .footer-container {
+    margin-bottom: 30px;
   }
 }
 
