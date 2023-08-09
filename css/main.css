@@ -343,6 +343,45 @@ body {
     background-color: #45a049;
   }
 
+  /* Start Of The Footer Styling */
+
+  footer {
+    background-color: lightblue;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-text {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .footer-text a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-text a:hover {
+    text-decoration: underline;
+  }
+
+  /* Social Media Icon Styling */
+  .fa-facebook, .fa-twitter, .fa-instagram {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    border: wheat;
+    border-radius: 7px;
+    border-style: groove;
+    border-width: 3px;
+  }
+
 /* Starting of the media queries */
 
  /* This the styling for the title of the Website */
