@@ -376,10 +376,13 @@ body {
     width: 30px;
     height: 30px;
     padding-top: 5px;
-    border: wheat;
+    border: rgb(253, 253, 253);
     border-radius: 7px;
     border-style: groove;
     border-width: 3px;
+  }
+  .fa-twitter {
+    padding-bottom: 10px;
   }
 
 /* Starting of the media queries */
