@@ -6,13 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.innerWidth <= 500) {
       document.getElementById("navbar").style.display = "none";
       document.getElementById("mobile_nav_btn").style.display = "block";
+      document.getElementById("dropdown_nav").style.display = "none";
+
     } else {
       document.getElementById("navbar").style.display = "block";
       document.getElementById("mobile_nav_btn").style.display = "none";
       document.getElementById("dropdown_nav").style.display = "none";
     }
   }
-  
   // Call hideNavBar() when the page loads
   hideNavBar();
 
