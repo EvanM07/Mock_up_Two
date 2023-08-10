@@ -49,3 +49,19 @@ function closeForm() {
   document.getElementsByClassName("contact-form")[0].style.display = "none";
 }
 
+
+
+// this is so the other websites dropdown menu can close when the user clicks anywhere on the page 
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdown-btn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
+

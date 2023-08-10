@@ -26,6 +26,18 @@
     />
   </head>
   <body>
+
+    <!-- Other websites dropdown menu and button -->
+    <div class="dropdown_container_websites">
+      <button class="dropdown-btn fa fa-bars " onclick="toggleDropdown()"> &nbsp Websites</button>
+      <ul class="dropdown-menu1" id="myDropdown">
+        <li><a href="https://evanm02.github.io/Portfolio-Website/">Portfolio Website</a></li>
+        <li><a href="https://evanm02.github.io/The_Space_Station/">The Space Station</a></li>
+        <!-- Add more website links here -->
+      </ul>
+    </div>
+
+
     <div id="home"></div>
 
     <!-- Start of nav bar -->
@@ -44,12 +56,12 @@
           <a class="nav-link" href="#review_title">Testimonials</a>
         </li>
       </ul>
-    </div>
+    </div> 
     <!-- End of nav bar -->
 
     <!-- start of navigation menu for mobile devices-->
     <div id="mobile_nav_container">
-      <button onclick="openNav()" id="mobile_nav_btn">Nav</button>
+      <button onclick="openNav()" id="mobile_nav_btn" class="fa fa-bars"> &nbsp Nav</button>
       <div id="dropdown_nav">
         <ul id="nav_list">
           <li class="mobile_nav_item">

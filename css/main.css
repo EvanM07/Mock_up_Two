@@ -20,33 +20,87 @@ body {
   background-color: lightblue !important;
 }
 
+/* Style for the dropdown button for the other website links */
+
+.dropdown_container_websites {
+  z-index: 40;
+  position: fixed;
+}
+
+.dropdown-btn {
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 40;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: black;
+  font-weight: 900;
+  background-color: lightblue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Style for the dropdown menu for the other website links */
+.dropdown-menu1 {
+  border: 1px solid #ddd;
+  list-style-type: none;
+  padding: 0;
+  background-color: lightblue !important;
+  margin-top: 35px;
+  margin-left: 10px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-color: wheat;
+  border-style: ridge;
+}
+
+.dropdown-menu1 li {
+  padding: 10px;
+}
+
+.dropdown-menu1 li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Show the dropdown menu when the button is clicked */
+.show {
+  display: block;
+}
+
 /* Start of the navigation menu styling */
 .nav {
-  background-color: lightblue;
+  height: 2rem;
 }
 #navbar {
-  background-color: lightblue;
-  height: 3rem;
+  height: 2rem;
 }
 
 .nav-link {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  background-color: lightblue;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style: double;
+  margin-left: 10px;
 }
-
 /* THIS THE NAVIGATION BUTTON AND DROPDOWN NAVIGATION FOR MOBILE STYLING */
 
 #mobile_nav_btn {
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 0;
+  left: 100px;
   background-color: lightblue;
   padding: 5px 5px 5px 5px;
   border-color: black;
   border-style: solid;
   border-radius: 7px;
+  padding-left: 5px;
   color: black;
 }
 #mobile_nav_btn:hover {
@@ -67,10 +121,9 @@ body {
   box-shadow: 2px 2px darkgray;
   position: fixed;
   z-index: 10;
-
 }
 
-.mobile_nav_item  {
+.mobile_nav_item {
   padding-top: 6px;
   max-width: 100px;
   width: max-content;
@@ -272,122 +325,124 @@ body {
 
 /*Contact Form Styling */
 .contact-form {
-    position: fixed;
-    display: none;
-    z-index: 9;
-    right: 0px;
-    bottom: 0px;
-    max-width: 400px;
-    padding: 10px;
-    margin-bottom: 10px; 
-    margin-right: 10px; 
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .close-btn {
-    position: absolute;
-    top: 5px; 
-    right: 5px; 
-    font-size: 16px;
-    background-color: #f0f0f0;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .close-btn:hover {
-    background-color: #dcdcdc;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 3px; 
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 8px; 
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  #submit_button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  #submit_button:hover {
-    background-color: #45a049;
-  }
+  position: fixed;
+  display: none;
+  z-index: 9;
+  right: 0px;
+  bottom: 0px;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  /* Start Of The Footer Styling */
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-  footer {
-    background-color: lightblue;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .footer-text {
-    margin: 10px 0;
-    font-size: 1.1rem;
-  }
-  
-  .footer-text a {
-    color: #007bff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  
-  .footer-text a:hover {
-    text-decoration: underline;
-  }
+.close-btn:hover {
+  background-color: #dcdcdc;
+}
 
-  /* Social Media Icon Styling */
-  .fa-facebook, .fa-twitter, .fa-instagram {
-    width: 30px;
-    height: 30px;
-    padding-top: 5px;
-    border: rgb(253, 253, 253);
-    border-radius: 7px;
-    border-style: groove;
-    border-width: 3px;
-  }
-  .fa-twitter {
-    padding-bottom: 10px;
-  }
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#submit_button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit_button:hover {
+  background-color: #45a049;
+}
+
+/* Start Of The Footer Styling */
+
+footer {
+  background-color: lightblue;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.footer-text a {
+  color: #007bff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+/* Social Media Icon Styling */
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  width: 30px;
+  height: 30px;
+  padding-top: 5px;
+  border: rgb(253, 253, 253);
+  border-radius: 7px;
+  border-style: groove;
+  border-width: 3px;
+}
+.fa-twitter {
+  padding-bottom: 10px;
+}
 
 /* Starting of the media queries */
 
- /* This the styling for the title of the Website */
+/* This the styling for the title of the Website */
 
 @media only screen and (max-width: 900px) {
   #about_container {
@@ -418,13 +473,11 @@ body {
 
 @media screen and (max-width: 500px) {
   .display-4 {
-      padding-top: 50px;
-      padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
   }
 
   .footer-container {
     margin-bottom: 30px;
   }
 }
-
-
