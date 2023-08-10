@@ -71,7 +71,7 @@ body {
 
 /* Start of the navigation menu styling */
 .nav {
-  height: 2rem;
+  margin-left: 100px;
 }
 #navbar {
   height: 2rem;
@@ -86,7 +86,8 @@ body {
   border-color: white;
   border-width: 1px;
   border-style: double;
-  margin-left: 10px;
+  margin: 0 auto;
+  margin-left: 20px;
 }
 /* THIS THE NAVIGATION BUTTON AND DROPDOWN NAVIGATION FOR MOBILE STYLING */
 
@@ -94,7 +95,7 @@ body {
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 100px;
+  left: 120px;
   background-color: lightblue;
   padding: 5px 5px 5px 5px;
   border-color: black;
@@ -109,29 +110,26 @@ body {
 
 #nav_list {
   list-style-type: none;
-  margin-top: 40px;
-  padding-left: 10px;
-  border-radius: 8px;
+  margin-top: 35px;
+  border-radius: 5px;
   background-color: lightblue;
-  max-width: 105px;
-  margin-left: 10px;
   border-color: wheat;
   border-style: ridge;
-  text-align: center;
+  text-align: left;
   box-shadow: 2px 2px darkgray;
   position: fixed;
   z-index: 10;
+  left: 120px;
 }
 
 .mobile_nav_item {
   padding-top: 6px;
-  max-width: 100px;
-  width: max-content;
+  text-align: left;
+  margin-left: -30px;
 }
 
 .mobile_nav_link {
   color: wheat;
-  width: max-content;
   text-decoration: none;
   color: black;
 }
@@ -471,7 +469,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 544px) {
   .display-4 {
     padding-top: 50px;
     padding-bottom: 30px;
