@@ -56,7 +56,11 @@ body {
 }
 
 .dropdown-menu1 li {
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px ;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
 }
 
 .dropdown-menu1 li a {
@@ -89,8 +93,9 @@ body {
   margin: 0 auto;
   margin-left: 20px;
 }
-/* THIS THE NAVIGATION BUTTON AND DROPDOWN NAVIGATION FOR MOBILE STYLING */
 
+
+/* THIS THE NAVIGATION BUTTON AND DROPDOWN NAVIGATION FOR MOBILE STYLING */
 #mobile_nav_btn {
   position: fixed;
   z-index: 10;
@@ -119,12 +124,15 @@ body {
   box-shadow: 2px 2px darkgray;
   position: fixed;
   z-index: 10;
-  left: 120px;
+  left: 100px;
 }
 
 .mobile_nav_item {
-  padding-top: 6px;
-  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px ;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
   margin-left: -30px;
 }
 

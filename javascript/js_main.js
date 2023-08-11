@@ -65,15 +65,12 @@ function openOtherSiteNav() {
 }
 
 // this is so the other websites dropdown menu can close when the user clicks anywhere on the page
-window.onclick = function (event) {
-  if (!event.target.matches(".dropdown-btn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-menu1");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
+// Close the navigation menu when clicking anywhere on the window
+document.addEventListener("click", function (event) {
+  var dropdownNav = document.getElementById("myDropdown");
+  var dropdownBtn = document.getElementById("other_sites");
+  // Check if the clicked element is not part of the navigation menu or the mobile navigation button
+  if (!dropdownNav || !dropdownBtn.contains(event.target)) {
+    dropdownNav.style.display = "none";
   }
-};
+});
