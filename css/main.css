@@ -95,8 +95,8 @@ body {
 .mobile_nav_item {
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
   margin-left: -30px;
 }
@@ -477,4 +477,19 @@ footer {
   .footer-container {
     margin-bottom: 30px;
   }
+}
+
+@media screen and (max-width: 500px) {
+ #review_one {
+  grid-column: 1/-1;
+  text-align: center;
+  padding-right: 20px;
+ }
+  #review_two {
+    grid-row-start: 3;
+    grid-column: 1/-1;
+    text-align: center;
+    padding-right: 20px;
+  }
+
 }
