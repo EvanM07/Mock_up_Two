@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   function hideNavBar() {
-    if (window.innerWidth <= 544) {
+    if (window.innerWidth <= 520) {
       document.getElementById("navbar").style.display = "none";
       document.getElementById("mobile_nav_btn").style.display = "block";
       document.getElementById("dropdown_nav").style.display = "none";
@@ -64,13 +64,3 @@ function openOtherSiteNav() {
   }
 }
 
-// this is so the other websites dropdown menu can close when the user clicks anywhere on the page
-// Close the navigation menu when clicking anywhere on the window
-document.addEventListener("click", function (event) {
-  var dropdownNav = document.getElementById("myDropdown");
-  var dropdownBtn = document.getElementById("other_sites");
-  // Check if the clicked element is not part of the navigation menu or the mobile navigation button
-  if (!dropdownNav || !dropdownBtn.contains(event.target)) {
-    dropdownNav.style.display = "none";
-  }
-});

@@ -20,53 +20,7 @@ body {
   background-color: lightblue !important;
 }
 
-/* Style for the dropdown button for the other website links */
 
-.dropdown_container_websites {
-  z-index: 40;
-  position: fixed;
-}
-
-.dropdown-btn {
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 40;
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: black;
-  font-weight: 900;
-  background-color: lightblue;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-/* Style for the dropdown menu for the other website links */
-.dropdown-menu1 {
-  border: 1px solid #ddd;
-  list-style-type: none;
-  padding: 0;
-  background-color: lightblue !important;
-  margin-top: 35px;
-  margin-left: 10px;
-  border-radius: 6px;
-  border-width: 2px;
-  border-color: wheat;
-  border-style: ridge;
-}
-
-.dropdown-menu1 li {
-  padding-left: 10px;
-  padding-right: 10px ;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  text-align: center;
-}
-
-.dropdown-menu1 li a {
-  text-decoration: none;
-  color: #333;
-}
 
 /* Show the dropdown menu when the button is clicked */
 .show {
@@ -74,11 +28,10 @@ body {
 }
 
 /* Start of the navigation menu styling */
-.nav {
-  margin-left: 100px;
-}
+
 #navbar {
   height: 2rem;
+  margin-bottom: 20px;
 }
 
 .nav-link {
@@ -100,14 +53,16 @@ body {
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 120px;
+  left: 0;
   background-color: lightblue;
-  padding: 5px 5px 5px 5px;
-  border-color: black;
+  border-color: rgba(121, 118, 118, 0.495);
   border-style: solid;
-  border-radius: 7px;
-  padding-left: 5px;
-  color: black;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 #mobile_nav_btn:hover {
   background-color: rgb(142, 215, 239);
