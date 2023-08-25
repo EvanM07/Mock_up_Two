@@ -454,9 +454,6 @@ footer {
     margin: auto;
   }
 
-  #about_title {
-  }
-
   #review_container {
     grid-template-rows: 60px 2fr;
   }
@@ -469,24 +466,21 @@ footer {
 
 @media screen and (max-width: 544px) {
   .display-4 {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
-
   .footer-container {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 500px) {
- #review_one {
-  grid-column: 1/-1;
-  text-align: center;
- }
+  #review_one {
+    grid-column: 1/-1;
+    text-align: center;
+  }
   #review_two {
     grid-row-start: 3;
     grid-column: 1/-1;
     text-align: center;
   }
-
 }
