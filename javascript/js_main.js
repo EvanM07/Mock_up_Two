@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   function hideNavBar() {
-    if (window.innerWidth <= 520) {
+    if (window.innerWidth <= 649) {
       document.getElementById("navbar").style.display = "none";
       document.getElementById("mobile_nav_btn").style.display = "block";
       document.getElementById("dropdown_nav").style.display = "none";
@@ -47,12 +47,6 @@ function openForm() {
 function closeForm() {
   document.getElementsByClassName("contact-form")[0].style.display = "none";
 }
-
-// This hides the other website links dropdown menu when the page loads
-document.addEventListener("DOMContentLoaded", function () {
-  var otherSites = document.getElementsByClassName("dropdown-menu1")[0];
-  otherSites.style.display = "none";
-});
 
 // This toggles other websites links dropdown menu
 function openOtherSiteNav() {

@@ -20,8 +20,6 @@ body {
   background-color: lightblue !important;
 }
 
-
-
 /* Show the dropdown menu when the button is clicked */
 .show {
   display: block;
@@ -29,9 +27,23 @@ body {
 
 /* Start of the navigation menu styling */
 
+/* Centering the navigation bar */
 #navbar {
-  height: 2rem;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  margin-left: 25%;
+}
+
+/* Styling for each nav item */
+.nav-item {
+  width: 150px;
+  text-align: center;
+  margin-left: 10px;
 }
 
 .nav-link {
@@ -43,10 +55,11 @@ body {
   border-color: white;
   border-width: 1px;
   border-style: double;
-  margin: 0 auto;
-  margin-left: 20px;
+  text-align: center;
+  padding: 5px 10px;
 }
 
+/* End of the navigation menu styling */
 
 /* THIS THE NAVIGATION BUTTON AND DROPDOWN NAVIGATION FOR MOBILE STYLING */
 #mobile_nav_btn {
@@ -55,14 +68,12 @@ body {
   top: 0;
   left: 0;
   background-color: lightblue;
-  border-color: rgba(121, 118, 118, 0.495);
-  border-style: solid;
   border-radius: 5px;
-  color: rgb(0, 0, 0);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-color: white;
+  border-width: 1px;
+  border-style: double;
+  color: #0d6efd;
+  padding: 0.5rem 1rem;
 }
 #mobile_nav_btn:hover {
   background-color: rgb(142, 215, 239);
@@ -70,21 +81,20 @@ body {
 
 #nav_list {
   list-style-type: none;
-  margin-top: 35px;
-  border-radius: 5px;
   background-color: lightblue;
   border-color: wheat;
   border-style: ridge;
   text-align: left;
+  border-radius: 5px;
   box-shadow: 2px 2px darkgray;
   position: fixed;
   z-index: 10;
-  left: 100px;
+  margin-top: -15px;
 }
 
 .mobile_nav_item {
   padding-left: 10px;
-  padding-right: 10px ;
+  padding-right: 10px;
   padding-top: 2px;
   padding-bottom: 2px;
   text-align: center;
@@ -105,6 +115,7 @@ body {
 .display-4 {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  margin-top: 50px;
 }
 
 /* Start of the about section styling */
@@ -403,7 +414,32 @@ footer {
 
 /* Starting of the media queries */
 
-/* This the styling for the title of the Website */
+/* This is for the nav bar centering spacing */
+@media only screen and (max-width: 970px) {
+  #navbar {
+    margin-left: 15%;
+  }
+}
+@media only screen and (max-width: 899px) {
+  #navbar {
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 770px) {
+  #navbar {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 699px) {
+  #navbar {
+    margin-left: 2.5%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  #navbar {
+    margin-left: 0%;
+  }
+}
 
 @media only screen and (max-width: 900px) {
   #about_container {
